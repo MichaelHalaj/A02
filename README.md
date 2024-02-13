@@ -11,23 +11,14 @@
 3. Create a new repository on GitHub by clicking on the "+" icon in the upper-right corner and selecting "New repository". Give it a name, optionally add a description, and choose other settings as needed. Then, click "Create repository".
 
 ### Step 2: Configure WebStorm
-1. Open WebStorm and navigate to `File` > `Settings` (or WebStorm > Preferences on macOS).
-![image](https://github.com/MichaelHalaj/A02/assets/89932319/7cb021ea-8f4b-405e-b247-0e9d147424c8)
-
+1. Open WebStorm and navigate to `File` > `Settings`.
 2. In the settings window, go to `Version Control` > `Git`. Make sure the path to the Git executable is correctly set. If Git is installed in the default location, WebStorm should detect it automatically.
-![image](https://github.com/MichaelHalaj/A02/assets/89932319/0d2535e0-be0a-4388-a8f7-4b13f9765706)
-
 3. Next, go to `Version Control` > `GitHub` and log in with your GitHub credentials to link your GitHub account with WebStorm.
-![image](https://github.com/MichaelHalaj/A02/assets/89932319/4550ebc9-76e6-4a1a-86bb-d37bf1137ccf)
 
 ### Step 3: Clone Your Repository
 1. In WebStorm, select `VCS` > `Get from Version Control` > `Git`.
-![image](https://github.com/MichaelHalaj/A02/assets/89932319/4fb4c67d-6cdd-4f03-ac8b-2543d24d8288)
-
 2. Copy the URL of your GitHub repository and paste it into the "URL" field in the dialog box.
 Choose the directory where you want to clone the repository on your local machine and click "Clone".
-![image](https://github.com/MichaelHalaj/A02/assets/89932319/f68698b2-6de6-4b2c-a674-86a57bc95488)
-
 3. WebStorm will clone the repository and set up the project for you.
 
 ### Step 4: Work with Branches and Commits
@@ -37,6 +28,16 @@ Choose the directory where you want to clone the repository on your local machin
 4. Open the "Version Control" tool window in WebStorm by selecting `View` > `Tool Windows` > `Version Control`.
 5. You'll see a list of changed files. Select the files you want to commit, enter a commit message describing your changes, and click "Commit".
 
+### Step 5: Push Changes to GitHub
+1. After committing your changes, you need to push them to your GitHub repository.
+2. In WebStorm, go to `VCS` > `Git` > `Push`.
+3. Make sure the correct branch is selected, then click "Push". This will upload your commits to the remote repository on GitHub.
+
+### Step 6: Collaborate and Merge Changes
+1. If you're collaborating with others, they can clone the repository from GitHub using the same URL.
+2. When someone else makes changes to the repository and pushes them to GitHub, you can pull those changes into your local repository by selecting `VCS` > `Git` > `Pull` in WebStorm.
+3. If there are any merge conflicts, WebStorm will help you resolve them by highlighting the conflicting lines and allowing you to choose which changes to keep.
+4. Once conflicts are resolved, commit the changes and push them to GitHub as described in Steps 4 and 5.
 ## Glossary
 - ***Branch***: A parallel version of a repository's code or history that diverges from the main line of development, allowing developers to work on features or fixes independently.
 
@@ -61,3 +62,12 @@ Choose the directory where you want to clone the repository on your local machin
 - ***Remote***: A version of a repository hosted on a server, typically accessed via a URL. It allows multiple developers to collaborate on the same project by sharing code and changes.
 
 - **Repository**: A central location where files, code, and project history are stored in a version control system like Git. It contains all the data and metadata necessary to manage and track changes to the project over time.
+
+## References:
+Git: Webstorm. WebStorm Help. (2023). https://www.jetbrains.com/help/webstorm/using-git-integration.html 
+
+Hello world. GitHub Docs. (2024). https://docs.github.com/en/get-started/start-your-journey/hello-world 
+
+Hendela, A. H. (2024). Introduction to Github and Webstorm. Lecture. 
+
+
